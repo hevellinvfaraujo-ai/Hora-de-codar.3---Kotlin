@@ -1,0 +1,13 @@
+fun main() {
+    print("Digite o valor de N: ")
+    val n = readLine()!!.toInt()
+
+    for (i in 1..n) {
+        println("Tabuada do $i:")
+        for (j in 1..10) {
+            println("$i x $j = ${i * j}")
+        }
+        println() // linha em branco entre as tabuadas
+    }
+}
+
