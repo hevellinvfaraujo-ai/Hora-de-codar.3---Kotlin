@@ -1,0 +1,18 @@
+fun main() {
+    var dentro = 0
+    var fora = 0
+
+    for (i in 1..10) {
+        print("Digite o valor $i: ")
+        val valor = readLine()!!.toInt()
+
+        if (valor in 24..42) {
+            dentro++
+        } else {
+            fora++
+        }
+    }
+
+    println("Quantidade de valores dentro do intervalo [24, 42]: $dentro")
+    println("Quantidade de valores fora do intervalo [24, 42]: $fora")
+}
