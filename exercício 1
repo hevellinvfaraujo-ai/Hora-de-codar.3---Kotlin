@@ -1,0 +1,15 @@
+fun main() {
+    for (i in 30 downTo 0) println(i)
+    println("EXPLOSÃO")
+}
+
+
+ou 
+
+fun main() {
+    for (i in 30 downTo 0) {
+        println(i)
+        Thread.sleep(1000) // pausa de 1 segundo
+    }
+    println("EXPLOSÃO")
+}
