@@ -1,0 +1,19 @@
+fun main() {
+    val totalNotas = 6
+    var soma = 0.0
+
+    for (i in 1..totalNotas) {
+        var nota: Double
+        do {
+            print("Digite a nota $i (0 a 10): ")
+            nota = readLine()!!.toDouble()
+            if (nota < 0 || nota > 10) {
+                println("Nota inválida! Digite um valor entre 0 e 10.")
+            }
+        } while (nota < 0 || nota > 10)
+        soma += nota
+    }
+
+    val media = soma / totalNotas
+    println("A média do aluno é: $media")
+}
