@@ -1,0 +1,10 @@
+fun main() {
+    val inicio = 15
+    val fim = 100
+
+    val quantidade = fim - inicio + 1
+    val soma = (inicio + fim) * quantidade / 2
+    val media = soma.toDouble() / quantidade
+
+    println("A média aritmética dos números entre $inicio e $fim é: $media")
+}
